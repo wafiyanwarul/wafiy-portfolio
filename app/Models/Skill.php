@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Skill extends Model
 {
     use HasFactory;
+    protected $table = 'skills'; // Explicitly set table name
     protected $fillable = ['name', 'proficiency', 'category'];
 
     public function user()

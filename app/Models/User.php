@@ -9,6 +9,7 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory;
+    protected $table = 'users'; // Explicitly set table name
 
     protected $fillable = ['name', 'email', 'password'];
 

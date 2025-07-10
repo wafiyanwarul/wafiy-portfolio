@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ProjectImage extends Model
 {
     use HasFactory;
+    protected $table = 'project_images'; // Explicitly set table name
     protected $fillable = ['project_id', 'image_url', 'caption'];
 
     public function project()

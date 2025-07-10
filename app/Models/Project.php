@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     use HasFactory;
+    protected $table = 'projects'; // Explicitly set table name
     protected $fillable = ['title', 'category', 'description', 'tech_stack', 'live_link', 'github_link'];
 
     public function user()
